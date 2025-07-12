@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yashwanth Reddy Vutukoori Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Yashwanth Reddy Vutukoori</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#exp-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#cert-section" class="nav-link"><span>Certificates</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#activities-section" class="nav-link"><span>Activities</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><a href="#Publication-Section" target="_blank" class="nav-link"><span>Publications</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>	
+
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" 
+     						style="background-image: url(images/bg_1.jpg); background-size: 80%; background-repeat: no-repeat; background-position: center;">
+
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hola!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yashwanth Reddy</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'AI Engineer ',
+						'GenAI and LLM Practitioner  ',
+						'Data Scientist  ',
+						'Computer Vision Enthusiast  ',
+						'Automotive Enthusiast  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>MSc in AI@Northeastern University</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><!-- <a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> --> 
+							<a href="https://github.com/YashwanthReddy27	" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">Github Profile</a></p>
+						<p><a href="https://www.linkedin.com/in/yashwanth-reddy-vutukoori/	" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">LinkedIN</a></p></p>	
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about_me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Yashwanth Reddy Vutukoori</span></p>
+										<p><span class="title-s">Education: </span> <span>MSc in AI at Northeastern</span></p>
+										<p><span class="title-s">Internship Experience: </span> <span>1 Year</span></p>
+										<p><span class="title-s">Address: </span> <span>Boston, MA</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									
+									<span>Python</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Computer Vision</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Science</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Deep Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>LLM and Transformer</span> <span class="pull-right">55%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Cloud - Azure</span> <span class="pull-right">50%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization and BI Tools</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p style="text-align: justify;">
+								I’m an AI Engineer and Researcher with 1+ years of hands-on experience in computer vision, machine learning, and multimodal AI systems. 
+								My expertise lies in building end-to-end pipelines, training custom deep learning models, and accelerating innovation across domains like sports 
+								analytics, healthcare, and autonomous mobility. 
+								I work at the intersection of cutting-edge research and real-world deployment—transforming complex data into intelligent, high-impact solutions.
+								<br/><br/>
+
+								At SportsVision Inc., I developed a video analysis pipeline using YOLOv9, SAM 2.0, and GPT-4o, reducing manual editing time by 80%.
+								 I’m also co-authoring a research paper on SV3.3B, a specialized video-text model that outperforms GPT-4o by up to 45.4% on ROUGE-L and
+								  BERT F1 benchmarks. Additionally, I engineered multimodal AI workflows that detect and describe key moments in sports footage,
+								   integrating object detection, segmentation, and generative captioning.
+								<br/><br/>
+
+								My technical stack includes Python, PyTorch, TensorFlow, scikit-learn, OpenCV, and modern ML tooling such as Hugging Face,
+								and LLM APIs. I'm committed to reproducibility, pipeline automation, and scalable AI deployment. I've previously built systems for 
+								real-time intrusion detection, helmet violation tracking, and personalized recommender systems.
+								<br/><br/>
+
+								I’m currently pursuing my Master’s in Artificial Intelligence at Northeastern University, backed by a top-ranking B.Tech in CSE-AIML. 
+								I stay current with emerging AI research and enjoy synthesizing insights from literature to guide practical system design. 
+								My passion lies in translating theory into impact—delivering real-world value in weeks, not months.
+								<br/><br/>
+
+								Team-oriented, deadline-driven, and purpose-focused, I bring the agility of a startup mindset combined with academic rigor.
+								 I believe in building intelligent systems that don’t just work—but make a difference.
+								</p>
+
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Education:</span> <span>Masters in Artifical Intelligence</span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Dat Science and Computer Vision</span></li>
+									<li class="d-flex"><span>GPA:</span> <span>3.66</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Telugu, Kannada, Hindi</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Motorsport, Reading</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="9">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/yashwanth-reddy-vutukoori/" target="_blank" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="exp-section">
+				<div class="row">
+					<h1 class="big-4">Experience</h1>
+					<div class="underline"></div>
+				</div>
+				<br>
+				<div class="row">
+					<!-- SportsVision Inc -->
+					<div class="col-md-4">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2025 May - Present</span>
+							<h2>AI Engineer</h2>
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<img src="images/sportsvision_logo.jpg" alt="SportsVision Inc Logo" style="height:32px; width:auto;">
+								<span class="position">SportsVision Inc</span>
+							</div>
+							<p class="mt-4">
+								<span style="font-style: italic;">
+									SportsVision Inc specializes in AI-driven LLM for the sports industry, providing advanced analytics, player performance insights, and fan engagement tools.
+								</span>
+								<br><br>
+								During my tenure as an AI Engineer at SportsVision Inc in Boston, I spearheaded the development of a comprehensive video analysis system tailored for the sports industry. My primary responsibility was to design and implement a pipeline that could automatically detect high-impact actions in sports footage, leveraging state-of-the-art models such as Yolov9, SAM 2.0, and GPT-4o. This initiative not only streamlined the video editing process—reducing manual intervention by 80%—but also set a new standard for efficiency in sports analytics. Beyond engineering, I played a pivotal role in the research and co-authorship of a publication introducing SV3.3B, a domain-specific video-text model that significantly outperformed general-purpose models like GPT-4o, achieving notable improvements in both ROUGE-L and BERT F1 metrics. My work required close collaboration with cross-functional teams, ensuring that our AI-driven solutions seamlessly integrated with existing production workflows and met the evolving needs of stakeholders.
+							</p>
+						</div>
+					</div>
+
+					<!-- Massachusetts General Hospital -->
+					<div class="col-md-4">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2025 Mar - 2025 May</span>
+							<h2>Data Science Research Assistant</h2>
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<img src="images/mgh_logo.jpg" alt="Massachusetts General Hospital Logo" style="height:32px; width:auto;">
+								<span class="position">Massachusetts General Hospital<br>
+									<span style="font-size: 0.9em;">(Collaboration w/ SATH LAB Northeastern)</span>
+								</span>
+							</div>
+							<p class="mt-4">
+								<span style="font-style: italic;">
+									Massachusetts General Hospital is a leading academic medical center providing comprehensive healthcare services and conducting groundbreaking research.
+								</span>
+								<br><br>
+								As a Data Science Research Assistant at Massachusetts General Hospital, I undertook the challenge of analyzing complex motion data derived from surgical procedures. My work involved processing six degrees of freedom (6DoF) head and hand trajectory data from a cohort of 60 patients, utilizing Python libraries such as NumPy and Pandas in conjunction with advanced optical motion capture systems. The goal was to quantify joint kinematics across multiple phases of surgical activity, providing granular insights into movement patterns. I developed sophisticated algorithms to detect and extract over 450 cutting strokes from instrument trajectories, employing velocity thresholds and axis-aligned pattern recognition to distinguish between expert and novice performance. To further enhance our understanding of motor strategies, I benchmarked five machine learning classifiers, including SVM and Random Forest, using stratified leave-one-out cross-validation in both PyTorch and scikit-learn. This multifaceted approach not only improved classification accuracy but also contributed valuable knowledge to the field of surgical skill assessment.
+							</p>
+						</div>
+					</div>
+
+					<!-- Continental Autonomous Mobility India -->
+					<div class="col-md-4">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2023 May - 2023 July</span>
+							<h2>Computer Vision Intern</h2>
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<img src="images/conti_logo.jpeg" alt="Continental Autonomous Mobility India Logo" style="height:32px; width:auto;">
+								<span class="position">Continental Autonomous Mobility India</span>
+							</div>
+							<p class="mt-4">
+								<span style="font-style: italic;">
+									As part of the global Continental group, it specializes in research and development for autonomous vehicles, developing intelligent systems that enhance vehicle safety, efficiency, and convenience through artificial intelligence and advanced sensor technologies.
+								</span>
+								<br><br>
+								In my internship at Continental Autonomous Mobility India, I concentrated on improving pedestrian detection using event-based camera data. By integrating YOLOX, Vision Transformers, and spatiotemporal training methods, I managed to boost detection accuracy, increasing mean average precision by 75%. I handled the entire training and deployment pipeline for these models, using tools like PyTorch and OpenCV, and implemented targeted data augmentations to optimize performance. My approach was informed by a thorough review and synthesis of 8–10 research papers, which enabled me to introduce architecture changes that halved the prototyping time.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<br><br>
+
+				<div class="row">
+					<h1 class="big-4">Education</h1>
+					<div class="underline"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2024-Present</span>
+							<h2>Masters in Artificial Intelligence</h2>
+							<span class="position">Northeastern University, Boston, MA</span>
+							<p class="mt-4">Course Duration: 2 Years</p>
+							<p class="mt-4">Grade: 3.66/4</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="resume-wrap ftco-animate">
+							<span class="date">2020-2024</span>
+							<h2>Bachelors in CSE-Artficial Intelligence and Machine Learning</h2>
+							<span class="position">GITAM University, Bengaluru, India</span>
+							<p class="mt-4">Course Duration: 4 Years.</p>
+							<p class="mt-4">Grade: 9.09/10</p>
+						</div>
+					</div>
+				</div>
+	</section>
+
+
+
+	<section class="ftco-section ftco-no-pb" id="cert-section"> 
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certifications</h1>
+					<h2 class="mb-4">Certifications and Badges</h2>
+					<p>Here are the concepts and skills I have learned.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/L645FJZJRWAY" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/ML_C.png');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://coursera.org/share/c6173e7d1e5e1e6d139be0b54e3bee1f" target="_blank">Machine Learning Algorithms</a></h3>
+							<p style="text-align: justify;"> Through this course, I gained hands-on experience in building and training neural networks using Python and TensorFlow. I learned how to enhance model performance
+								by applying techniques such as convolutional layers for image recognition, enabling the network to accurately identify and classify real-world images. 
+								The curriculum also covered the fundamentals of natural language processing, where I taught machines to interpret, analyze, and respond to human speech
+								and text. Additionally, I explored supervised and unsupervised learning, model evaluation, and practical data science workflows, equipping me with the
+								skills to develop, test, and deploy machine learning solutions for a variety of real-world applications. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://www.coursera.org/account/accomplishments/certificate/QYXVBX8KR6B6" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/generated-image.png');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://coursera.org/share/4082ac66dfcd4a364d98202b530b7a5e" target="_blank">Python for Data Science, AI & Development </a></h3>
+							<p style = 'text-align: justify;'>Built a strong foundation and	 applied object-oriented principles using classes and exception handling to build reusable and
+								  robust code structures.
+
+								Throughout the course, I worked extensively with essential Python libraries such as NumPy and Pandas for data manipulation and analysis, using Jupyter
+								 Notebooks as the development environment. I also gained hands-on experience accessing and extracting data from the web using REST APIs (via requests) 
+								 and performing web scraping with BeautifulSoup, enhancing my ability to build real-world data pipelines.
+
+								This course strengthened my readiness to develop AI and data-driven solutions using Python, combining both practical coding and theoretical principles.
+							 </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://skillsoft.digitalbadges.skillsoft.com/4a2bd6d3-cbab-4638-a2c9-9f4795829ebe#acc.rNfc8O4V" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/cloud.png');"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="https://coursera.org/share/0125188087dae536802634e4dbcaa038" target="_blank">Google Data Analytics Specialization</a></h3>
+							<p style ="text-align: justify;">I gained practical experience in the end-to-end data analysis process, starting from data collection and cleaning to transformation, visualization, and insight 
+								generation. Using tools such as Excel, SQL, and R, I worked with real-world datasets to develop actionable business recommendations and create compelling dashboards. 
+								A key highlight was the final case study on the BellaBeat company, where I performed a complete analysis of smart fitness device usage data to uncover user behavior 
+								patterns and provide data-driven strategies for product and marketing improvements.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">
+			Pr<span id="easter-egg-o" style="color: #ffeb3b; font-weight: bold; cursor: pointer;" title="Click me!">o</span>jects
+			</h2>
+            <p>Below are the Data Science and AI projects.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/YashwanthReddy27/Tower-Defense-Game-Agent" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/agent_rl.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/YashwanthReddy27/Tower-Defense-Game-Agent" target="_blank">Tower Defense RL Agent Project</a></h3>
+                <p style="text-align: justify;">This project demonstrates the development of a Reinforcement Learning agent that strategically plays Tower Defense games by combining 
+					deep learning with genetic algorithms. The agent learns to optimally place towers and manage resources, featuring both manual gameplay 
+					and fully automated AI-driven modes using Q-Learning and Deep Q-Network approaches. Built with Pygame and Gymnasium, the system evolved
+					 through three progressive versions with enhanced visuals and tower mechanics. The agent navigates complex resource management while 
+					 balancing defensive strategies, earning money by defeating enemies and preventing base breaches.
+				</p>
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://github.com/YashwanthReddy27/Traffic-Violation-Detection" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/traffic_violation.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/YashwanthReddy27/Traffic-Violation-Detection" target="_blank">Traffic Violation Detection</a></h3>
+			  <p style = 'text-align: justify;'>The Traffic Violation Detection project leverages a YOLOv5 model trained on an augmented dataset to automatically identify motorcycle riders and pillions
+				not wearing helmets, extract their number plates using EasyOCR, and save the results for further analysis. The model demonstrates strong performance, 
+				with precision and recall curves indicating high accuracy in detecting helmet violations and distinguishing between classes. <b><a href="https://github.com/YashwanthReddy27/Traffic-Violation-Detection" target="_blank"> Try it out HERE</a></b>
+			  </p>
+
+			</div>
+		  </div>
+		</div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/nishi-2/Streamlit_Applications/tree/main/Text_Data_Scraping_App" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/scrape.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/nishi-2/Streamlit_Applications/tree/main/Text_Data_Scraping_App" target="_blank">E-Commerce-Recommendation-System</a></h3>
+                <p style="text-align: justify;">This project delivers a hybrid recommendation engine that combines collaborative filtering and content-based approaches to provide personalized product recommendations
+					 for e-commerce platforms. Built on Amazon product data, the system analyzes user behavior patterns and product features through advanced data exploration techniques 
+					 including sentiment analysis and TF-IDF vectorization. The dual-approach architecture leverages KNNBasic algorithms with cosine similarity for collaborative 
+					 filtering while employing nearest neighbors for content-based recommendations, creating a robust system that adapts to both user preferences and product 
+					 characteristics.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/nishi-2/Streamlit_Applications/tree/main/Company_visual" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/market.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/nishi-2/Streamlit_Applications/tree/main/Company_visual" target="_blank">Details of Multiple Companies at one place</a></h3>
+				  <p>Get company names, company website, and a brief analysis of company growth at one place! With more than 80,000 company names
+					listed across different industries, your company search will be easier. <b><a href="https://company-visual.streamlit.app/", target="_blank"> CLICK HERE to
+						see how it may help you
+					</a></b>
+				  </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/nishi-2/Machine-Learning-Classification-Projects/blob/main/Fine%20Tuned%20Marketing%20Campaign/Customer_Conversion_Rate_Classification_Project.ipynb" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/camp.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/nishi-2/Machine-Learning-Classification-Projects/blob/main/Fine%20Tuned%20Marketing%20Campaign/Customer_Conversion_Rate_Classification_Project.ipynb" target="_blank">Strategic Marketing Campaigns with ML</a></h3>
+				  <p>This project simplifies profitable marketing by analyzing customer behavior before investment. I conducted thorough data analysis 
+					and applied multiple classification ML models to predict whether a customer will engage with a campaign, ensuring smarter and more 
+					effective marketing decisions.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+		<br>
+		<br>
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/mountain.jpg)">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github  </span> </h2>
+					<div class="heading"> <h4> I love to solve business problems and work in multiple domains </h4>
+						<h6 style="color: aliceblue;"> 	Connect with me to discuss and see how I can help you out with your tasks. </h6>
+					<br>
+					<p><a href="https://github.com/YashwanthReddy27" target="_blank" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+    </section> -->
+
+
+	<section class="ftco-section ftco-no-pb" id="activities-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Activities</h1>
+				  <h2 class="mb-4">Activities</h2>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">  
+				<div class="col-md-4 d-flex ftco-animate">
+		<div class="blog-entry justify-content-end">
+			<img src="images/stva.png" alt="Image">
+			<div class="text mt-3 float-right d-block">
+				<h3 class="heading">Sports Technology & Video Analysis</h3>
+				<p style="text-align: justify;">I specialize in developing computer vision solutions for sports analytics, 
+				working with technologies like YOLOv8, MediaPipe, and OpenCV to create automated 
+				video analysis systems. My projects include basketball performance tracking, 
+				sports scene analysis, and real-time action detection models. I've built 
+				comprehensive sports datasets and developed AI agents for sports video understanding.
+				<br/><br/>
+				This work combines my passion for sports with cutting-edge AI technology, 
+				allowing me to contribute to the growing field of sports analytics. Through 
+				these projects, I've gained expertise in zero-shot action localization, 
+				video understanding models, and wearable technology integration for performance 
+				monitoring.</p>
+			</div>
+		</div>
+	</div>
+
+
+				<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+				<img src="images/snapcaht.png" alt="Image">
+				<div class="text mt-3 float-right d-block">
+					<h3 class="heading">Snapchat Filter & AR Experience Creator</h3>
+					<p style="text-align: justify;">I create engaging Snapchat filters and augmented reality experiences using 
+					Lens Studio, combining my computer vision expertise with creative design skills. 
+					My filters range from interactive face tracking effects to world-based AR 
+					experiences, incorporating advanced features like hand tracking, object recognition, 
+					and real-time image processing. I leverage my video editing skills with FFmpeg 
+					to create polished promotional content for filter launches[1].
+					<br/><br/>
+					This creative outlet allows me to apply my technical knowledge in AI and computer 
+					vision to build immersive user experiences that reach millions of users. Each 
+					filter project challenges me to optimize performance while maintaining visual 
+					quality, bridging the gap between complex technical implementation and 
+					user-friendly interactive design. I also integrate my AI agent development 
+					experience to create smart, responsive filter behaviors
+
+					</div>
+				</div>
+    </section>
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="9">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1">0</strong>
+                <span>Publication</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Travel Logs(P.S I love travelling)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Contact</h1>
+				<h2 class="mb-4">Contact Me</h2>
+				<p>Below are the details to reach out to me!</p>
+			</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-map-signs"></span>
+				</div>
+				<h3 class="mb-4">Address</h3>
+				<p>Home Town : Bengaluru, Karnataka, India</p>
+				<p>Work Location : Boston, MA, USA</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-phone2"></span>
+				</div>
+				<h3 class="mb-4" style="word-break: break-word;">
+					Connect with me via email or LinkedIn for official discussions
+				</h3>
+				<p>
+					<a href="https://www.linkedin.com/in/yashwanth-reddy-vutukoori/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+				</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-paper-plane"></span>
+				</div>
+				<h3 class="mb-4">Email Address</h3>
+				<p>
+					<a href="mailto:yashwanthreddyvutukoori@gmail.com">yashwanthreddyvutukoori@gmail.com</a>
+				</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center">
+					<span class="icon-globe"></span>
+				</div>
+				<h3 class="mb-4">Download Resume</h3>
+				<p>
+					<a href="https://drive.google.com/file/d/1ubeo0UroSJRUCGV38VpDbIWGoEhLuT3m/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+				</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> 
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSdSb_w6Kmnrk1XLU8QGkZ6thk-x6UUA--1EGCGTH7lW380ZEg/viewform?usp=sharing&ouid=100687932071449027865" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<p style="color: azure;"> If you are <b>seeking assistance with a project, looking for an expertise in AI field or consulting on how to 
+						AI can increase efficiency for your platform , or considering hiring me for a part-time, full-time, or contract position</b>,
+						please feel free to connect with me.You can contact me directly through my social channels or submit your query via the provided form.
+					</p>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://github.com/YashwanthReddy27" target="_blank"><span class="icon-github"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yashwanth-reddy-vutukoori/" target="_blank"><span class="icon-linkedin"></span></a></li>  
+					  <!--<li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>-->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> This template is taken from <i class="icon-heart color-danger" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank">Colorlib</a> and I have altered it as per my requirements.
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+  <!-- Place this where you want the animation to appear -->
+  <div id="car-animation-container" style="position: fixed; left: 0; bottom: 0; width: 100vw; height: 100px; pointer-events: none; z-index: 9999;"></div>
+  <audio id="car-horn" src="images/double-car-horn-352443.mp3" preload="auto"></audio>
+
+  </body>
+</html>
