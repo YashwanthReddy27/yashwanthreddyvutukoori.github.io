@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225" role="img" aria-label="Customerly AI Refund Support Agent">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2b2b"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#cbg)"/>
+  <g fill="none" stroke="#3a3a3a" stroke-width="1">
+    <path d="M0 50 H400 M0 100 H400 M0 150 H400"/>
+  </g>
+  <!-- chat bubble -->
+  <rect x="42" y="44" rx="14" ry="14" width="168" height="84" fill="#F96D00"/>
+  <path d="M72 128 l0 22 l26 -22 z" fill="#F96D00"/>
+  <circle cx="84" cy="86" r="8" fill="#fff"/>
+  <circle cx="118" cy="86" r="8" fill="#fff"/>
+  <circle cx="152" cy="86" r="8" fill="#fff"/>
+  <!-- shield / guardrail -->
+  <path d="M300 40 l48 18 v36 c0 37 -28 57 -48 68 c-20 -11 -48 -31 -48 -68 v-36 z" fill="#ffbd39"/>
+  <path d="M280 92 l15 15 l28 -32" fill="none" stroke="#171717" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- caption -->
+  <text x="22" y="192" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="25" font-weight="700">Customerly</text>
+  <text x="22" y="213" fill="#ffbd39" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="600">AI Refund Support Agent &middot; FastAPI</text>
+</svg>
