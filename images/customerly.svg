@@ -20,5 +20,5 @@
   <path d="M280 92 l15 15 l28 -32" fill="none" stroke="#171717" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
   <!-- caption -->
   <text x="22" y="192" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="25" font-weight="700">Customerly</text>
-  <text x="22" y="213" fill="#ffbd39" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="600">AI Refund Support Agent &middot; FastAPI</text>
+  <text x="22" y="213" fill="#ffbd39" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="600">AI Refund Support Agent · FastAPI</text>
 </svg>
